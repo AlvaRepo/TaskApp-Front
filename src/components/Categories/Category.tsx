@@ -15,7 +15,7 @@ const Category = () => {
   }, []);
 
   const filteredTasks = selectedCategory
-  ? tasks.filter(task => task.estado.toUpperCase() === selectedCategory.toUpperCase())
+  ? tasks.filter(task => task.state.toUpperCase() === selectedCategory.toUpperCase())
   : tasks;
   
   
